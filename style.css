@@ -12,7 +12,7 @@
     --page-background: #141414;
     --card-background: #1f1f1f;
     --link-background: #333333;
-    --city-title-color: #bfe243;
+    --city-title-color: #c5f82a;
 }
 
 body {
@@ -110,11 +110,11 @@ section.links-container ul li {
     text-align: center;
     margin-top: 13px;
     border-radius: 5px;
-    transition: transform .5s ease;
+    transition: background-color .5s ease;
 }
 
 section.links-container ul li:hover {
-    transform: scale(0.95);
+    background-color: var(--city-title-color);
 }
 
 section.links-container ul li a {
@@ -123,6 +123,11 @@ section.links-container ul li a {
     padding: 10px;
     font-size: 10px;
     font-weight: 500;
+    transition: color .5s ease;
+}
+
+section.links-container ul li:hover a {
+    color: black;
 }
 
 .attribution { font-size: 11px; text-align: center; margin-top: 50px; color: white}
